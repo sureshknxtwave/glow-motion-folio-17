@@ -11,6 +11,7 @@ const Navigation = () => {
   const navItems = [
     { id: 'hero', label: 'Home' },
     { id: 'about', label: 'About' },
+    { id: 'experience', label: 'Experience' },
     { id: 'resume', label: 'Resume' },
     { id: 'education', label: 'Education' },
     { id: 'skills', label: 'Skills' },
@@ -71,7 +72,7 @@ const Navigation = () => {
               className="text-2xl font-bold hero-text-glow cursor-pointer"
               onClick={() => scrollToSection('hero')}
             >
-              Portfolio
+             SK
             </motion.div>
 
             {/* Desktop Menu */}

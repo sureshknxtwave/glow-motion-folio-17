@@ -3,9 +3,9 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Github } from 'lucide-react';
-import project1 from '@/assets/project-1.jpg';
-import project2 from '@/assets/project-2.jpg';
-import project3 from '@/assets/project-3.jpg';
+import project1 from '@/assets/project-1.png';
+import project2 from '@/assets/project-2.png';
+import project3 from '@/assets/project-3.png';
 
 const ProjectsSection = () => {
   const ref = useRef(null);
@@ -14,32 +14,32 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
+      title: "Chat & Video Calling App",
+      description: "Built real-time messaging with typing indicators and emoji reactions, boosting user engagement by 20%. Used Socket.io and WebRTC for real-time communication over TCP/IP. Added group video calling to support social learning, increasing user retention by 35%. Implemented TanStack Query for efficient data fetching and caching, improving load times by 60%. Integrated Stream for scalable, reliable messaging, achieving 99% uptime across all sessions.",
       image: project1,
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
-      liveUrl: "https://demo.com",
-      githubUrl: "https://github.com/johndoe/ecommerce",
+      technologies: [ "React", "Express", "MongoDB", "Tailwind CSS", "Tanstack Query", "Socket.io"],
+      liveUrl: "https://streamify-video-calls-nise.onrender.com/",
+      githubUrl: "https://github.com/sureshknxtwave/streamify-video-calls",
       featured: true
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team collaboration features, and mobile-responsive design.",
+      title: "Remote Interview Platform",
+      description: "Built a real-time interview platform with Stream, enabling seamless video calls, screen sharing, and recording.Designed a modern UI with Tailwind CSS & Shadcn, increasing user engagement by 40%.Integrated Clerk for authentication & Convex for data storage, enhancing security and scalability.Optimized server actions & server components, improving performance by 30% and reducing load times.",
       image: project2,
-      technologies: ["Vue.js", "Firebase", "TypeScript", "PWA"],
-      liveUrl: "https://demo2.com",
-      githubUrl: "https://github.com/johndoe/taskmanager",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn", "Stream", "Convex", "Clerk"],
+      liveUrl: "https://skcodesync.vercel.app/",
+      githubUrl: "https://github.com/sureshknxtwave/Remote_Interview_Platform",
       featured: true
     },
     {
       id: 3,
-      title: "Analytics Dashboard",
-      description: "A business intelligence dashboard with interactive charts, real-time data visualization, and advanced filtering capabilities.",
+      title: "AI-Powered Fitness Assistant Web App",
+      description: "Developed a conversational fitness assistant using Vapi and Gemini AI to provide real-time, personalized fitness and nutrition plans based on user input like goals, injuries, and dietary preferences.Integrated Clerk for secure, seamless authentication via GitHub, Google, and email/password.Used Convex for real-time state management, enabling instant plan updates and interactions across sessions.Built a responsive, accessible UI with Tailwind CSS and Shadcn UI, ensuring smooth UX across all devices and user needs.",
       image: project3,
-      technologies: ["React", "D3.js", "Python", "FastAPI", "Chart.js"],
-      liveUrl: "https://demo3.com",
-      githubUrl: "https://github.com/johndoe/analytics",
+      technologies: ["Next.js", "React", "Tailwind CSS", "Shadcn UI", "Vapi", "Gemini AI", "Clerk", "Convex"],
+      liveUrl: "https://code-flex-orpin.vercel.app/",
+      githubUrl: "https://github.com/sureshknxtwave/CodeFlex",
       featured: true
     }
   ];

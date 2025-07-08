@@ -74,19 +74,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "john.doe@example.com",
-      href: "mailto:john.doe@example.com"
+      value: "sureshknxtwave@gmail.com",
+      href: "mailto:sureshknxtwave@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 7036329226",
+      href: "tel:+91 7036329226"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Vijaywada, Andhra Pradesh, India",
       href: "#"
     }
   ];
@@ -95,13 +95,13 @@ const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/johndoe",
+      href: "https://github.com/sureshknxtwave",
       color: "hover:text-gray-600"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/johndoe",
+      href: "https://www.linkedin.com/in/suresh-k-9499a9282/",
       color: "hover:text-blue-600"
     }
   ];

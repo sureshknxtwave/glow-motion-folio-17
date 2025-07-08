@@ -30,13 +30,13 @@ const Footer = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/johndoe",
+      href: "https://github.com/sureshknxtwave",
       color: "hover:text-gray-400"
     },
     {
       icon: Linkedin,
       label: "LinkedIn", 
-      href: "https://linkedin.com/in/johndoe",
+      href: "https://www.linkedin.com/in/suresh-k-9499a9282/",
       color: "hover:text-blue-400"
     }
   ];
@@ -64,7 +64,7 @@ const Footer = () => {
                 transition={{ duration: 0.6 }}
               >
                 <h3 className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-hero-gradient">
-                  John Doe
+                  Suresh Kandregula
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-6 max-w-md">
                   Full Stack Developer passionate about creating beautiful, functional, and user-centered 
@@ -123,9 +123,9 @@ const Footer = () => {
               >
                 <h4 className="text-lg font-semibold mb-6 text-foreground">Get In Touch</h4>
                 <div className="space-y-3 text-muted-foreground">
-                  <p>john.doe@example.com</p>
-                  <p>+1 (555) 123-4567</p>
-                  <p>San Francisco, CA</p>
+                  <p>sureshknxtwave@gmail.com</p>
+                  <p>+91 7036329226</p>
+                  <p>Andhra Pradesh, India</p>
                 </div>
                 <Button
                   onClick={() => scrollToSection('contact')}
@@ -148,7 +148,7 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="flex items-center gap-2 text-sm text-muted-foreground"
               >
-                <span>© {currentYear} John Doe. Made with</span>
+                <span>© {currentYear} Suresh K. Made with</span>
                 <Heart className="w-4 h-4 text-red-500" />
                 <span>using React & Tailwind CSS</span>
               </motion.div>

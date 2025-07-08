@@ -30,40 +30,57 @@ const ResumeSection = () => {
   const handleDownloadResume = () => {
     // Create a mock PDF download
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // You would replace this with actual resume path
-    link.download = 'John_Doe_Resume.pdf';
+    link.href = '/MyResume.pdf'; // You would replace this with actual resume path
+    link.download = 'SureshK.pdf';
     link.click();
   };
 
   const handleViewResume = () => {
     // Open resume in new tab
-    window.open('/resume.pdf', '_blank');
+    window.open('/MyResume.pdf', '_blank');
   };
 
   const resumeStats = [
-    { label: "Years Experience", value: "3+" },
+    { label: "Years Experience", value: "1+" },
     { label: "Projects Completed", value: "25+" },
     { label: "Technologies Mastered", value: "15+" },
     { label: "Client Satisfaction", value: "100%" }
   ];
 
   const resumeSections = [
-    {
-      title: "Professional Experience",
-      description: "3+ years in full-stack development with leading tech companies",
-      items: ["Senior Developer at TechCorp", "Full-Stack Developer at StartupXYZ", "Frontend Intern at WebSolutions"]
-    },
-    {
-      title: "Technical Skills",
-      description: "Comprehensive expertise across modern web technologies",
-      items: ["Frontend: React, Vue, TypeScript", "Backend: Node.js, Python, PostgreSQL", "DevOps: AWS, Docker, Kubernetes"]
-    },
-    {
-      title: "Education & Certifications",
-      description: "Strong academic foundation with industry certifications",
-      items: ["MS Computer Science - Stanford", "AWS Certified Solutions Architect", "Google Cloud Professional Developer"]
-    }
-  ];
+  {
+    title: "Professional Experience",
+    description: "Full-stack development with real-world project delivery and industry internships",
+    items: [
+      "Full-Stack Developer Intern at Webxinfinity",
+      "Built real-time and scalable applications using React, Node.js, and Convex",
+      "Integrated payment and authentication systems using Stripe and Clerk"
+    ]
+  },
+  {
+    title: "Technical Skills",
+    description: "Comprehensive technical expertise across modern development tools and practices",
+    items: [
+      "Programming Languages: Python, Java, C++, C, JavaScript, TypeScript",
+      "Web Technologies: HTML, CSS, Tailwind CSS, Bootstrap, React, Next, Node, Express",
+      "Databases: MySQL, PostgreSQL, MongoDB, Convex (serverless & real-time)",
+      "DSA: Solved 400+ problems on Nxtwave & LeetCode – Arrays, Strings, Trees, Graphs, DP, Heaps, Tries, etc.",
+      "System Design: Microservices, REST APIs, WebSockets, SQL/NoSQL, Caching, Load Balancing, Distributed Systems",
+      "DevOps & Cloud: AWS, CI/CD (basics), Kubernetes (basics)",
+      
+    ]
+  },
+  {
+    title: "Education & Certifications",
+    description: "Strong academic background with continuous learning through certifications and projects",
+    items: [
+      "B.Tech in Computer Science and Engineering (AI & IPA Specialization)",
+      "Diploma in Computer Engineering",
+      "Completed multiple real-world projects via NxtWave CCBP 4.0 Academy"
+    ]
+  }
+];
+
 
   return (
     <section id="resume" className="py-20 bg-muted/30">
@@ -146,31 +163,42 @@ const ResumeSection = () => {
                       <FileText className="w-8 h-8 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-800">John Doe</h3>
+                      <h3 className="text-2xl font-bold text-gray-800">Suresh K</h3>
                       <p className="text-gray-600">Full Stack Developer</p>
                     </div>
                   </div>
                   
                   <div className="space-y-4 text-gray-700">
-                    <div>
-                      <h4 className="font-semibold border-b border-gray-200 pb-1 mb-2">Experience</h4>
-                      <div className="text-sm space-y-1">
-                        <p>Senior Developer at TechCorp (2022-Present)</p>
-                        <p>Full-Stack Developer at StartupXYZ (2021-2022)</p>
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <h4 className="font-semibold border-b border-gray-200 pb-1 mb-2">Skills</h4>
-                      <div className="text-sm">
-                        <p>React, Node.js, TypeScript, Python, AWS...</p>
-                      </div>
-                    </div>
-                    
-                    <div className="text-center pt-4">
-                      <div className="text-xs text-gray-400">... and much more</div>
-                    </div>
-                  </div>
+  <div>
+    <h4 className="font-semibold border-b border-gray-200 pb-1 mb-2">Experience</h4>
+    <div className="text-sm space-y-1">
+      <p>Full-Stack Developer Intern at Webxinfinity</p>
+      <p>Built scalable apps using React, Node.js, Convex</p>
+      <p>Integrated Stripe, Clerk, and Stream.io</p>
+    </div>
+  </div>
+
+  <div>
+    <h4 className="font-semibold border-b border-gray-200 pb-1 mb-2">Skills</h4>
+    <div className="text-sm space-y-1">
+      <p><strong>Languages:</strong> Python, Java, C++, C, JavaScript, TypeScript</p>
+      <p><strong>Frontend:</strong> HTML, CSS, Tailwind CSS, Bootstrap, React, Next.js</p>
+      <p><strong>Backend:</strong> Node.js, Express.js</p>
+      <p><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Convex</p>
+      <p><strong>Libraries:</strong> Pandas, NumPy, Matplotlib, Seaborn</p>
+      <p><strong>System Design:</strong> Microservices, REST APIs, WebSockets, Caching, Auth, Load Balancing</p>
+      <p><strong>Distributed Systems:</strong> Docker, Redis, Kafka, Socket.io</p>
+      <p><strong>APIs & Tools:</strong> Stripe, Clerk, GraphQL, Git, GitHub, Linux</p>
+      <p><strong>Cloud & DevOps:</strong> AWS, CI/CD, Kubernetes</p>
+      <p><strong>Soft Skills:</strong> Communication, Teamwork, Technical Documentation</p>
+    </div>
+  </div>
+
+  <div className="text-center pt-4">
+    <div className="text-xs text-gray-400">... and much more</div>
+  </div>
+                </div>
+
                 </div>
 
                 {/* Action Buttons */}

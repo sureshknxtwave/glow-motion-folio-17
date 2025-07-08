@@ -51,7 +51,7 @@ const AboutSection = () => {
                 <div className="relative">
                   <img
                     src={profilePhoto}
-                    alt="John Doe"
+                    alt="Suresh K"
                     className="w-full max-w-md mx-auto rounded-3xl shadow-elegant transition-smooth group-hover:shadow-glow"
                   />
                   <div className="absolute inset-0 rounded-3xl ring-1 ring-border"></div>
@@ -66,7 +66,7 @@ const AboutSection = () => {
                 className="absolute -top-8 -right-8 glass rounded-2xl p-6 shadow-elegant"
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">3+</div>
+                  <div className="text-3xl font-bold text-primary">1+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
               </motion.div>
@@ -88,10 +88,10 @@ const AboutSection = () => {
             <motion.div variants={itemVariants} className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold mb-4 text-foreground">
-                  Hello! I'm John Doe
+                  Hello! I'm Suresh Kandregula
                 </h3>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  I'm a passionate full-stack developer and UI/UX designer with over 3 years of experience 
+                  I'm a passionate full-stack developer with over 1 year of experience 
                   creating digital solutions that make a difference. I love turning complex problems into 
                   simple, beautiful, and intuitive designs.
                 </p>
@@ -106,9 +106,9 @@ const AboutSection = () => {
                 <h4 className="text-xl font-semibold mb-4 text-foreground">What I Do</h4>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[
-                    { title: "Frontend Development", desc: "React, Vue, TypeScript" },
-                    { title: "Backend Development", desc: "Node.js, Python, PostgreSQL" },
-                    { title: "UI/UX Design", desc: "Figma, Adobe XD, Prototyping" },
+                    { title: "Frontend Development", desc: "React, JavaScript, TypeScript" },
+                    { title: "Backend Development", desc: "Node.js, Python, PostgreSQL, MongoDB, Convex" },
+                    { title: "Fullstack Development", desc: "Next, TypeScript" },
                     { title: "Cloud & DevOps", desc: "AWS, Docker, CI/CD" }
                   ].map((item, index) => (
                     <motion.div

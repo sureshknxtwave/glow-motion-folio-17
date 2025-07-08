@@ -14,8 +14,8 @@ const HeroSection = () => {
   const handleDownloadResume = () => {
     // Create a mock PDF download
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // You would replace this with actual resume path
-    link.download = 'John_Doe_Resume.pdf';
+    link.href = './MyResume.pdf'; // You would replace this with actual resume path
+    link.download = 'SureshK.pdf';
     link.click();
   };
 
@@ -70,7 +70,7 @@ const HeroSection = () => {
         >
           <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-hero-gradient p-1">
             <div className="w-full h-full rounded-full bg-background flex items-center justify-center text-4xl font-bold text-transparent bg-clip-text bg-hero-gradient">
-              JD
+              SK
             </div>
           </div>
         </motion.div>
@@ -81,7 +81,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-5xl md:text-7xl font-bold mb-6 text-white hero-text-glow"
         >
-          John Doe
+          Suresh Kandregula
         </motion.h1>
 
         <motion.h2
@@ -90,7 +90,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-2xl md:text-3xl mb-8 text-gray-200 font-light"
         >
-          Full Stack Developer & UI/UX Designer
+          Full Stack Developer
         </motion.h2>
 
         <motion.p
@@ -121,7 +121,7 @@ const HeroSection = () => {
             onClick={() => scrollToSection('contact')}
             variant="outline"
             size="lg"
-            className="px-8 py-6 text-lg font-semibold border-2 border-white text-white hover:bg-white hover:text-primary transition-smooth"
+            className="px-8 py-6 text-lg font-semibold border-2 border-white text-green hover:bg-white hover:text-primary transition-smooth"
           >
             Contact Me
           </Button>
